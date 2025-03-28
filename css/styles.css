@@ -27,7 +27,7 @@ h2.title {
 body {
     background-color: rgb(235, 136, 191);
     background-image: -moz-radial-gradient();
-    color: blueviolet;
+    color: rgb(0, 0, 0);
 }
 nav {
     margin: 20px;
