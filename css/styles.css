@@ -20,7 +20,7 @@ h2.title {
     font-size: 40px;
 }
 body {
-    background-color: aquamarine;
+    background-color: rgb(235, 136, 191);
     background-image: -moz-radial-gradient();
     color: blueviolet;
 }
@@ -32,7 +32,7 @@ nav {
 }
 li {
     display: inline;
-    background-color: beige;
+    background-color: rgb(182, 32, 114);
     padding: 2px;
     margin: 2px;
 }
