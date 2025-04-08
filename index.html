@@ -3,11 +3,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/styles.css">
+        <script src="./script/script.js"></script>
         <title>
             Purrfect Life - Cat Blog
         </title>
     </head>
     <body>
+        
         <!--Navigation Bar-->
         <nav>
             <ul>
@@ -16,13 +18,20 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+        
         <!--Main Content-->
         <div>
             <center>
             <h1 id="welcome">
                  Welcome to My Lovely Cat Blog!
             </h1>
+            <!-- <button onclick="changeTheme()">Change Theme</button> -->
+            <!-- <button onclick="showMessage()">Click here</button> -->
+            <!-- <button onclick="checkAge()">Enter the party</button> -->
+            <!-- <button onclick="showMany()">Try to close</button> -->
+            <!-- <button onclick="changeColor()">Change Color</button> -->
             </center>
+        <div class="container">
             <p><span>Hello fellow cat lovers!</span> This blog is all about our fluffy overlords. If you love cats as much as I do, you are in the right place!</p>
             <h2>Why Cats Are The Best?</h2>
             <p>Cats are <span style="color: brown;">independent</span>, <span style="color: rgb(37, 49, 207);">playful</span>, and <span style="color: red;">super adorable</span>. Here are some reasons why they make the best pets:</p>
@@ -35,20 +44,29 @@
             <h3>Cat of the Week:</h3>
             <p>Meet Luna! She is a 3-year-old British longhair who loves to nap and chase laser pointers.</p>
             <center>
-            <img width="560" height="515" src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?q=80&w=3374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cute cat">
+            <img width="560" height="650" src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?q=80&w=3374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cute cat">
             <p>&copy; Unsplash</p> 
             </center>
 
             <!-- Link to Cat History -->
             <p>If you're curious about the history of our feline friends, you can learn more by reading <a href="https://www.alleycat.org/resources/the-natural-history-of-the-cat/" target="_blank">The Natural History of the Cat</a>.</p>
-
+            <center>
+            <img id="lunasimba" src="https://bestfriends.org/sites/default/files/resource_article_images/introducing-dogs-cats-resource_0.jpg">
+            <br>
+            <button onclick="changeToLuna()">Luna</button>
+            <button onclick="changeToSimba()">Simba</button>
+            <!-- <button onmouseover="document.getElementById('id').style.background = 'value'">Hover</button> -->
+            </center>
+        </div>
         </div>
         
         <!--Footer-->
-        <footer>
+        <footer class="site-footer">
+            <p>Follow us for more cat content!</p>
             <p>Contact us at <a href="mailto:catlovers@phuongtran.com">catlovers@phuongtran.com</a></p>
             <p>&copy; 2025 Purrfect Life - All rights reserved.</p>
         </footer>
+        
 
     </body>
 </html>
