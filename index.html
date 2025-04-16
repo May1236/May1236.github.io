@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="./css/styles.css">
+        <link id="css" rel="stylesheet" href="./css/styles.css">
         <script src="./script/script.js"></script>
         <title>
             Purrfect Life - Cat Blog
@@ -22,15 +22,17 @@
         <!--Main Content-->
         <div>
             <center>
-            <h1 id="welcome">
-                 Welcome to My Lovely Cat Blog!
-            </h1>
-            <!-- <button onclick="changeTheme()">Change Theme</button> -->
-            <!-- <button onclick="showMessage()">Click here</button> -->
-            <!-- <button onclick="checkAge()">Enter the party</button> -->
-            <!-- <button onclick="showMany()">Try to close</button> -->
-            <!-- <button onclick="changeColor()">Change Color</button> -->
+                <section class="js-demo-section">
+                    <h2 id="main-title">Welcome to My Lovely Cat Blog!</h2>
             </center>
+
+            <button onclick="changeTheme()">Switch Theme</button>
+            <button onclick="changeColor()">Change Title Color</button>
+            <button onclick="showMessage()">Show Message</button>
+            <button onclick="checkAge()">Check Cat Age</button>
+            <button onclick="showMany()">Show Cat Facts</button>
+            <button id="okButton" onclick="changeInner()">Click Me</button>
+
         <div class="container">
             <p><span>Hello fellow cat lovers!</span> This blog is all about our fluffy overlords. If you love cats as much as I do, you are in the right place!</p>
             <h2>Why Cats Are The Best?</h2>
@@ -53,20 +55,26 @@
             <center>
             <img id="lunasimba" src="https://images.unsplash.com/photo-1601992688411-b6f5ac51b012?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
             <br>
-            <button onclick="changeToLuna()">Luna</button>
-            <button onclick="changeToSimba()">Simba</button>
+            <button onclick="changeToLuna()">See Luna</button>
+            <button onclick="changeToSimba()">See Simba</button>
             <!-- <button onmouseover="document.getElementById('id').style.background = 'value'">Hover</button> -->
             </center>
         </div>
         </div>
-        
+
+        <!-- Hover Button -->
+        <button id="hoverButton">Hover Me</button>
+
+        <!-- Counter -->
+        <button id="buttonCounter" onclick="incrementCounter()">Add</button>
+        <p id="counter">Count: 0</p>
+
         <!--Footer-->
         <footer class="site-footer">
             <p>Follow us for more cat content!</p>
             <p>Contact us at <a href="mailto:catlovers@phuongtran.com">catlovers@phuongtran.com</a></p>
             <p>&copy; 2025 Purrfect Life - All rights reserved.</p>
         </footer>
-        
 
     </body>
 </html>
