@@ -21,17 +21,17 @@
         
         <!--Main Content-->
         <div>
-            <center>
-                <section class="js-demo-section">
-                    <h2 id="main-title">Welcome to My Lovely Cat Blog!</h2>
-            </center>
+            <section class="js-demo-section">
+                <h2 id="main-title" style="text-align: center;">Welcome to My Lovely Cat Blog!</h2>
 
-            <button onclick="changeTheme()">Switch Theme</button>
-            <button onclick="changeColor()">Change Title Color</button>
-            <button onclick="showMessage()">Show Message</button>
-            <button onclick="checkAge()">Check Cat Age</button>
-            <button onclick="showMany()">Show Cat Facts</button>
-            <button id="okButton" onclick="changeInner()">Click Me</button>
+                <div class="button-group" style="text-align: center; margin-bottom: 20px;">
+                    <button onclick="changeTheme()">Switch Theme</button>
+                    <button onclick="changeColor()">Change Title Color</button>
+                    <button onclick="showMessage()">Show Message</button>
+                    <button onclick="checkAge()">Check Cat Age</button>
+                    <button onclick="showMany()">Show Cat Facts</button>
+                </div>
+            </section>
 
         <div class="container">
             <p><span>Hello fellow cat lovers!</span> This blog is all about our fluffy overlords. If you love cats as much as I do, you are in the right place!</p>
@@ -62,12 +62,16 @@
         </div>
         </div>
 
-        <!-- Hover Button -->
-        <button id="hoverButton">Hover Me</button>
-
-        <!-- Counter -->
-        <button id="buttonCounter" onclick="incrementCounter()">Add</button>
-        <p id="counter">Count: 0</p>
+        <div class="extra-buttons" style="text-align: center; margin: 40px auto;">
+            <button id="hoverButton">Hover Me</button>
+            <button id="okButton" onclick="changeInner()">Click Me</button>
+            <button id="buttonCounter" onclick="incrementCounter()">Add</button>
+            <p id="counter">Count: 0</p>
+            <button onclick="generateMessages()">Generate Cat Facts</button>
+                
+                <div id="loop-messages"></div>
+        </div>
+        
 
         <!--Footer-->
         <footer class="site-footer">

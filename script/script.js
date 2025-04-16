@@ -10,7 +10,7 @@ function showMessage() {
     alert(message);
 }
 
-// Age check (demo logic)
+// Age check
 function checkAge() {
     let catAge = 2;
     if (catAge >= 1) {
@@ -53,7 +53,6 @@ function changeToSimba()
 
 // Swap to alternate theme
 function changeTheme() {
-    // Thay đổi màu nền tổng thể
     document.body.style.backgroundColor = "#1a1a1a";
     document.body.style.color = "#f2f2f2";
   
@@ -120,3 +119,13 @@ function incrementCounter() {
     document.getElementById("counter").textContent = "Count: " + count;
 }
 
+function generateMessages() {
+    const container = document.getElementById("loop-messages");
+    container.innerHTML = ""; // reset
+    for (let i = 1; i <= 5; i++) {
+      const p = document.createElement("p");
+      p.textContent = "Cat Fact #" + i + ": Cats sleep up to 16 hours a day!";
+      container.appendChild(p);
+    }
+  }
+  
